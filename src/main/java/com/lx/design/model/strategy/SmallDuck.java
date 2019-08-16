@@ -1,9 +1,9 @@
 package com.lx.design.model.strategy;
 
 public class SmallDuck extends Duck{
-	public SmallDuck() {
-		flyBehavior = new SlowlyFly();
-		quiackBehavior = new SmallQuiack();
+	public SmallDuck(FlyBehavior flyBehavior,QuiackBehavior quiackBehavior) {
+		super.flyBehavior = flyBehavior;
+		super.quiackBehavior = quiackBehavior;
 	}
 	@Override
 	void display() {
